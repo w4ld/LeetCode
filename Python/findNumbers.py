@@ -24,6 +24,6 @@ else:
 nums2 = [2333,5,12,3,4444,7]
 ret2 = findNumbers(nums2)
 if(ret2==3):
-    printf("Pass")
+    print("Pass")
 else:
-    printf("Fail")
+    print("Fail")
