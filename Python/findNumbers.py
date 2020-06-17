@@ -4,6 +4,7 @@ def findNumbers( nums):
     :rtype: int
     """
     ret = 0
+
     for i in range(len(nums)):
         x = 1;
         nums[i] = nums[i] // 10

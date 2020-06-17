@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCoding
+namespace LeetCode
 {
     public partial class LeetCodeLibrary
     {
