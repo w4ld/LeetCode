@@ -16,6 +16,15 @@ namespace LeetCode
             }
             Console.WriteLine("]");
         }
+        public static void PrintIntList(List<int> list)
+        {
+            Console.Write("[ ");
+            foreach (int i in list)
+            {
+                Console.Write("{0} ", i);
+            }
+            Console.WriteLine("]");
+        }
         #endregion
         #region Swap
         public static void Swap(int[] arr, int i, int j)

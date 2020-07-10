@@ -7,7 +7,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            LeetCodeLibrary.SmallerNumbersThanCurrentTest();
+            LeetCodeLibrary.ReverseVowelsTest();
             //LeetCodeLibrary.FindNumbersTest();
             //  HammingDistanceTesting();
             //SortStringTest();
