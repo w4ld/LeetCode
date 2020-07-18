@@ -1,3 +1,4 @@
+from mock import MagicMock
 def uniqueMorseRepresentations( words ):
     """
     :type words: List[str]
@@ -6,7 +7,6 @@ def uniqueMorseRepresentations( words ):
     morse_words = set() #set because they want distinct count
     morse_alphabet = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
     for word in words:
-        #word=word.lower()
         morse_word=""
         for letter in word:
             morse_word+=morse_alphabet[ord(letter)-97]

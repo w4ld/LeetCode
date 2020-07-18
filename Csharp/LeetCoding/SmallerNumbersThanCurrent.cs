@@ -24,6 +24,25 @@ namespace LeetCode
 
         public static int[] SmallerNumbersThanCurrent(int[] nums)
         {
+            int i, j, k;
+            int sz = nums.Length;
+            int[] arr = new int[101];
+            //utilize constraint. increment num in array based on value -> index
+            for (i = 0; i < sz; i++)
+                arr[nums[i]] += 1;
+            //double loop to calculate values for each num in array
+            for (i = 0; i < sz; i++)
+            {
+                k = 0;
+                for (j = 0; j < nums[i]; j++)
+                    k += arr[j];
+                nums[i] = k;
+            }
+            return nums;
+        }
+
+        public static int[] SmallerNumbersThanCurrent2(int[] nums)
+        {
             int i, j, c;
             int numsSize = nums.Length;
             int[] retArr = new int[numsSize];
